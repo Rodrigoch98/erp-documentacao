@@ -8,7 +8,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: #8B0000 !important; /* Vermelho escuro */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 /* Banner Principal */
@@ -17,6 +17,7 @@ header {
     padding-bottom: 100px;
     background: linear-gradient(135deg, #8B0000, #660000); /* Tons de vermelho escuro */
     color: #ffffff;
+    text-align: center;
 }
 
 /* Cards de Documentação */
@@ -24,8 +25,8 @@ header {
     transition: transform 0.3s, box-shadow 0.3s;
     border: none;
     border-radius: 10px;
-    background-color: #2a2a2a; /* Preto mais claro */
-    color: #ffffff;
+    background-color: #ffffff; /* Branco para suavizar */
+    color: #111;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,22 +39,25 @@ header {
 .btn-primary {
     background-color: #8B0000;
     border-color: #660000;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: #660000;
-    border-color: #4b0000;
+    background-color: #ffffff;
+    border-color: #8B0000;
+    color: #8B0000;
 }
 
 /* Rodapé */
 footer {
     background-color: #111;
-    color: #fff;
+    color: #ffffff;
     padding: 20px 0;
+    text-align: center;
 }
 
 .social-links a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
 }
