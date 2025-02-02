@@ -1,18 +1,17 @@
-// scripts.js
-// Adiciona interatividade ao menu mobile
-document.addEventListener('DOMContentLoaded', function () {
-    const navbarToggler = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
+// Função para registrar acessos
+let totalAcessos = 0;
 
-    navbarToggler.addEventListener('click', function () {
-        navbarCollapse.classList.toggle('show');
-    });
+function registrarAcesso() {
+    totalAcessos++;
+    console.log("Total de acessos:", totalAcessos);
+}
 
-    // Fecha o menu ao clicar em um link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navbarCollapse.classList.remove('show');
+// Função para animação de scroll suave
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
     });
 });
