@@ -1,13 +1,13 @@
 /* Estilos Globais */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Preto escuro */
+    background-color: #1a1a1a; /* Cinza escuro para o fundo */
     color: #e0e0e0; /* Cinza claro para melhor contraste */
 }
 
 /* Navbar */
 .navbar {
-    background-color: #8B0000 !important; /* Vermelho escuro */
+    background-color: #1a1a1a !important; /* Cinza escuro no topo */
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
@@ -15,7 +15,7 @@ body {
 header {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: linear-gradient(135deg, #8B0000, #660000); /* Tons de vermelho escuro */
+    background: #1a1a1a; /* Cinza escuro no fundo do topo */
     color: #ffffff;
     text-align: center;
 }
@@ -25,9 +25,16 @@ header {
     transition: transform 0.3s, box-shadow 0.3s;
     border: none;
     border-radius: 10px;
-    background-color: #ffffff; /* Branco para suavizar */
+    background-color: #ffffff; /* Branco no fundo atrás das separações */
     color: #111;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fundo das separações de Produção, Qualidade e demais opções */
+.card-body {
+    background-color: #1a1a1a; /* Cinza escuro */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -50,7 +57,7 @@ header {
 
 /* Rodapé */
 footer {
-    background-color: #111;
+    background-color: #1a1a1a; /* Cinza escuro no rodapé */
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
