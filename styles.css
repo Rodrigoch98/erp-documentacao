@@ -20,6 +20,11 @@ header {
     text-align: center;
 }
 
+/* Subtítulo abaixo do título principal */
+header p {
+    color: #d3d3d3; /* Cinza claro para o texto "Acesso rápido às documentações de todas as áreas do ERP" */
+}
+
 /* Área atrás das opções de Produção, Qualidade e demais */
 section {
     background-color: #ffffff; /* Branco no fundo atrás das separações */
@@ -68,8 +73,12 @@ footer {
     text-align: center;
 }
 
+/* Texto e ícones do rodapé */
+footer p, .social-links a {
+    color: #ffffff !important; /* Branco para o texto "© 2023 ERP Documentação. Todos os direitos reservados." e ícones de redes sociais */
+}
+
 .social-links a {
-    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
 }
