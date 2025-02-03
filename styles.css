@@ -43,6 +43,7 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
+/* Reduzimos o padding para diminuir a altura do campo, mantendo o fundo intacto */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -51,17 +52,13 @@ header.bg-primary {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8rem 0;  /* 8rem de padding para afastar do topo */
+  padding: 4rem 0;  /* Reduzido de 8rem para 4rem */
 }
 header .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-}
-/* ADICIONADO: para centralizar ainda mais o título HELP SINGE */
-header h1.display-4 {
-  margin-top: 5rem;
 }
 header .display-4,
 header .lead {
@@ -79,7 +76,7 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
-/* Aplica para Home e Documentação */
+/* Aplica tanto para Home quanto para Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -96,7 +93,7 @@ section {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-/* ADICIONADO: animação dos ícones ao passar o mouse */
+/* Animação dos ícones: ao passar o mouse, o ícone aumenta de escala */
 .card-body i {
   transition: transform 0.3s ease;
 }
@@ -153,7 +150,7 @@ section {
   padding: 0 15px;
 }
 
-/* Parte Superior do rodapé: Linha com 3 colunas */
+/* Parte Superior do rodapé: 3 colunas */
 .custom-footer .footer-top {
   margin-bottom: 20px;
 }
@@ -170,7 +167,7 @@ section {
   margin-bottom: 5px;
 }
 
-/* Redes Sociais na Coluna de Contato */
+/* Redes Sociais na Coluna Contato */
 .footer-social-inside {
   margin-top: 15px;
 }
