@@ -20,16 +20,19 @@ body {
     color: #EAF5F9; /* Opcional: destaque em um tom claro */
 }
 
-/* 
-   Header (Banner Principal) para Home e Documentação  
-   Se o header tiver a classe "bg-primary", essa regra a sobrescreve.
-*/
+/* Header (Banner Principal) para Home e Documentação */
+/* Agora com fundo #3a768c, e o conteúdo centralizado verticalmente e horizontalmente */
 header,
 header.bg-primary {
     background-color: #3a768c !important;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Garante que o header ocupe a altura total da viewport, descontada a altura do navbar (70px) */
+    min-height: calc(100vh - 70px);
     text-align: center;
-    padding: 5rem 0; /* Equivalente a py-5 */
+    padding: 2rem;  /* Um padding extra para telas menores */
 }
 
 /* Seção Geral */
