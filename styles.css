@@ -43,7 +43,6 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aplica para Home e Documentação */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -52,18 +51,18 @@ header.bg-primary {
   align-items: center;      /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
   text-align: center;
-  padding: 5rem 0;          /* Espaçamento vertical (py-5 do Bootstrap) */
+  padding: 5rem 0;          /* Mantém o py-5 */
 }
 header .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  /* Removendo margens padrão dos títulos para evitar que fiquem colados */
 }
-header .container h1,
-header .container p {
-  margin: 0;
+/* Para garantir que os títulos não fiquem colados ao topo, removemos margens extras */
+header .display-4,
+header .lead {
+  margin: 0.5rem 0;
 }
 
 /* ============================= */
@@ -77,6 +76,7 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
+/* Para Home e Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -96,7 +96,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Para os cards clicáveis na página Documentação */
+/* Na página Documentação, os cards serão clicáveis */
 .card a {
   display: block;
   color: inherit;
@@ -118,25 +118,62 @@ section {
 }
 
 /* ============================= */
-/* 7. Footer                    */
+/* 7. Custom Footer             */
 /* ============================= */
-footer {
+.custom-footer {
   background-color: #1A1A1A;
   color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 3px solid #C51631;
+  padding: 40px 0;
+  font-size: 0.9rem;
 }
-footer p,
-.social-links a {
-  color: #ffffff !important;
-}
-.social-links a {
+.custom-footer a {
+  color: #ffffff;
   text-decoration: none;
-  margin: 0 10px;
 }
-.social-links a:hover {
+.custom-footer a:hover {
   color: #C51631;
+}
+.custom-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.custom-footer .footer-top,
+.custom-footer .footer-middle,
+.custom-footer .footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.custom-footer .footer-logo img {
+  max-width: 200px;
+}
+.custom-footer .footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.custom-footer .footer-menu ul li {
+  margin-right: 15px;
+}
+.custom-footer .footer-contact,
+.custom-footer .footer-social {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.custom-footer .footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.custom-footer .footer-social ul li {
+  margin-bottom: 5px;
+}
+.custom-footer .footer-bottom {
+  text-align: center;
 }
 
 /* ============================= */
