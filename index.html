@@ -15,7 +15,6 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <!-- Alterado de ERP DOCS para LINCE TECH -->
       <a class="navbar-brand" href="#">LINCE TECH</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -31,19 +30,17 @@
     </div>
   </nav>
 
-  <!-- Conteúdo Principal envolvido em <main> para o sticky footer -->
+  <!-- Conteúdo Principal -->
   <main>
     <!-- Banner Principal -->
     <header class="bg-primary text-white text-center py-5">
       <div class="container">
-        <!-- Alterado para HELP SINGE -->
         <h1 class="display-4">HELP SINGE</h1>
-        <!-- Alterado para: Acesso rápido às documentações de todas as áreas do Singe. -->
         <p class="lead">Acesso rápido às documentações de todas as áreas do Singe.</p>
       </div>
     </header>
 
-    <!-- Seção de Documentações (Cards) - Ordenados Alfabeticamente -->
+    <!-- Seção de Documentação (Cards Home) - 15 Cards em Ordem Alfabética -->
     <section class="py-5">
       <div class="container">
         <div class="row text-center">
@@ -202,14 +199,41 @@
     </section>
   </main>
 
-  <!-- Rodapé fixo -->
-  <footer class="text-center py-4">
+  <!-- Rodapé personalizado -->
+  <footer class="custom-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> LINCE TECH. Todos os direitos reservados.</p>
-      <div class="social-links">
-        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+      <!-- Área superior do rodapé: logo e menu -->
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="https://lincetec.com.br/">
+            <img src="https://lincetec.com.br/wp-content/uploads/2023/06/logo-lince-tipografia.png" alt="Lince Tech">
+          </a>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="https://lincetec.com.br/nossa-historia/">Nossa História</a></li>
+            <li><a href="https://lincetec.com.br/contato/">Entre em Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Área intermediária: Contato e Redes Sociais -->
+      <div class="footer-middle">
+        <div class="footer-contact">
+          <h3>Onde estamos</h3>
+          <p>Rua Dr. Nereu Ramos, n° 750 Coloninha, Gaspar SC</p>
+          <p>Cep: 8911-110</p>
+        </div>
+        <div class="footer-social">
+          <h3>Nos acompanhe nas redes sociais</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/lincetech/" target="_blank"><i class="fab fa-instagram"></i> lincetech</a></li>
+            <li><a href="https://www.linkedin.com/company/lincetech/" target="_blank"><i class="fab fa-linkedin"></i> Lince Participações e Empreendimentos</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Área inferior: Direitos autorais -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> LINCE TECH. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
