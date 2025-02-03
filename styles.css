@@ -29,7 +29,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navbar .navbar-brand {
-  /* Alterado de ERP DOCS para LINCE TECH */
   color: #ffffff;
   font-weight: bold;
 }
@@ -38,7 +37,7 @@ body {
 }
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-  color: #EAF5F9; /* Destaque opcional */
+  color: #EAF5F9;
 }
 
 /* ============================= */
@@ -47,23 +46,25 @@ body {
 /* Aplica para Home e Documentação */
 header,
 header.bg-primary {
-  background-color: #3a768c !important;  /* Fundo forçado para #3a768c */
+  background-color: #3a768c !important;
   color: #ffffff;
   display: flex;
   align-items: center;      /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
   text-align: center;
-  padding: 5rem 0;          /* Espaço (py-5 do Bootstrap) */
+  padding: 5rem 0;          /* Espaçamento vertical (py-5 do Bootstrap) */
 }
 header .container {
-  /* Centraliza o conteúdo dentro do header */
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  /* Removendo margens padrão dos títulos para evitar que fiquem colados */
 }
-
-/* Altere o texto do header via HTML (ver abaixo) */
+header .container h1,
+header .container p {
+  margin: 0;
+}
 
 /* ============================= */
 /* 4. Seção Geral               */
@@ -76,7 +77,6 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
-/* Estilo dos cards (para Home e Documentação) */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -93,9 +93,14 @@ section {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-/* Ícones dos Cards */
 .card i.text-primary {
   color: #C51631 !important;
+}
+/* Para os cards clicáveis na página Documentação */
+.card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* ============================= */
