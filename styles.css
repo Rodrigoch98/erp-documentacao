@@ -43,7 +43,6 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aumentamos o padding para afastar o título do topo */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -76,7 +75,6 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
-/* Aplica para Home e Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -96,7 +94,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Para os cards na página Documentação, o card todo é clicável */
+/* Para os cards na página Documentação, todo o card é clicável */
 .card a {
   display: block;
   color: inherit;
@@ -120,10 +118,10 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
-/* O rodapé foi organizado em 3 partes:
-   - Parte Superior: três colunas (Contato, Onde estamos, Mapa)
-   - Parte Intermediária: Redes Sociais (título e ícones com textos)
-   - Parte Inferior: linha com a logo (no canto inferior esquerdo) e direitos autorais à direita
+/* O rodapé é organizado em 3 partes:
+   - Parte Superior: Linha com 3 colunas (Contato, Onde estamos, Mapa)
+   - Dentro da Coluna "Contato": redes sociais (Instagram e LinkedIn em linhas separadas)
+   - Parte Inferior: Linha final com logo (no canto inferior esquerdo) e direitos autorais à direita
 */
 .custom-footer {
   background-color: #1A1A1A;
@@ -144,7 +142,7 @@ section {
   padding: 0 15px;
 }
 
-/* Parte Superior do rodapé: 3 colunas */
+/* Parte Superior do rodapé: Linha com 3 colunas */
 .custom-footer .footer-top {
   margin-bottom: 20px;
 }
@@ -161,32 +159,19 @@ section {
   margin-bottom: 5px;
 }
 
-/* Parte Intermediária: Redes Sociais */
-.footer-social {
-  margin-bottom: 20px;
-  text-align: center;
+/* Redes Sociais dentro da coluna "Contato" */
+.footer-social-inside {
+  margin-top: 15px;
 }
-.footer-social .footer-social-title {
-  font-weight: bold;
-  margin-bottom: 10px;
+.footer-social-inside p {
+  margin: 0 0 5px 0;
+  line-height: 1.5;
 }
-.footer-social ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  vertical-align: middle;
-}
-.footer-social ul li {
-  display: inline;
-  margin-right: 15px;
-}
-.footer-social ul li a span {
-  margin-left: 5px;
-  vertical-align: middle;
+.footer-social-inside a {
+  display: block;
 }
 
-/* Parte Inferior: Linha com a logo e direitos autorais */
+/* Parte Inferior: Linha com Logo e Direitos Autorais */
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -196,8 +181,7 @@ section {
   padding-top: 10px;
 }
 .footer-bottom .logo-bottom {
-  /* Logo no canto inferior esquerdo – tamanho aumentado */
-  max-width: 150px;
+  max-width: 150px;  /* Logo aumentada para 150px de largura */
   height: auto;
 }
 .footer-bottom .copyright {
