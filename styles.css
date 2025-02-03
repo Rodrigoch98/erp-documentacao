@@ -43,7 +43,6 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aumentamos o espaçamento do header para não ficar colado ao topo */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -52,7 +51,7 @@ header.bg-primary {
   align-items: center;      /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
   text-align: center;
-  padding: 7rem 0;          /* Aumentado de 5rem para 7rem */
+  padding: 7rem 0;          /* Aumentado para afastar o título do topo */
 }
 header .container {
   display: flex;
@@ -76,7 +75,6 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
-/* Aplica para Home e Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -96,7 +94,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Na página Documentação, o card todo será clicável */
+/* Para os cards na página Documentação, todo o card é clicável */
 .card a {
   display: block;
   color: inherit;
@@ -120,14 +118,6 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
-/* Estrutura do rodapé organizada em seções, de cima para baixo:
-   1. Contato  
-   2. Espaçamento  
-   3. Onde estamos  
-   4. Espaçamento  
-   5. Mapa  
-   6. "Nos acompanhe nas redes sociais" (título em uma única linha) e abaixo os ícones  
-   7. Linha inferior com direitos autorais */
 .custom-footer {
   background-color: #1A1A1A;
   color: #ffffff;
@@ -146,46 +136,19 @@ section {
   margin: 0 auto;
   padding: 0 15px;
 }
-/* Cada seção do rodapé terá espaçamento inferior */
-.custom-footer .footer-section {
+
+/* Footer: Linha superior com 3 colunas */
+.custom-footer .footer-top {
   margin-bottom: 20px;
-  text-align: center;
 }
-
-/* Footer: Contato */
-.custom-footer .footer-contact h3 {
-  margin-bottom: 0.5rem;
+.custom-footer .footer-top .row > [class^="col-"] {
+  margin-bottom: 20px;
 }
-
-/* Footer: Onde estamos */
-.custom-footer .footer-location h3 {
-  margin-bottom: 0.5rem;
-}
-
-/* Footer: Mapa */
-.custom-footer .footer-map iframe {
-  width: 100%;
-  height: 150px;
-  border: 0;
-}
-
-/* Footer: Redes Sociais */
-.custom-footer .footer-social-title {
-  font-weight: bold;
+.custom-footer .footer-top h3 {
   margin-bottom: 10px;
 }
-.custom-footer .footer-social ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-}
-.custom-footer .footer-social ul li {
-  display: inline;
-  margin-right: 15px;
-}
 
-/* Footer: Direitos autorais */
+/* Footer: Linha inferior (redes sociais e direitos autorais) */
 .custom-footer .footer-bottom {
   text-align: center;
 }
