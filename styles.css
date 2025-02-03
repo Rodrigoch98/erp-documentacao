@@ -27,7 +27,7 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aplica para Home e Documentação (mesmo se tiver a classe bg-primary) */
+/* Aplica para Home e Documentação (mesmo se usar a classe bg-primary) */
 header,
 header.bg-primary {
     background-color: #3a768c !important;  /* Fundo forçado para #3a768c */
@@ -35,17 +35,22 @@ header.bg-primary {
     display: flex;
     align-items: center;      /* Centraliza verticalmente */
     justify-content: center;  /* Centraliza horizontalmente */
-    min-height: calc((100vh - 70px) / 4);  /* Reduzido para 1/4 da viewport (descontando o navbar) */
+    /* Mantemos a altura definida pelo padding (py-5) do Bootstrap; 
+       se desejar ajustar a altura sem alterar o padding, pode definir um min-height menor.
+       Aqui, removemos o min-height forçado para evitar que o conteúdo fique "colado" ao topo */
+    /* Se necessário, você pode definir um min-height, por exemplo:
+       min-height: 25vh; 
+       mas neste exemplo vamos depender do padding */
     text-align: center;
-    padding: 2rem;  /* Padding extra para telas menores */
+    padding: 5rem 0;
 }
-/* Centraliza o conteúdo interno do header */
+
+/* Caso o conteúdo interno precise de ajuste extra, centralizamos o container */
 header .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
 }
 
 /* ============================= */
@@ -79,9 +84,17 @@ section {
     color: #C51631 !important;
 }
 
+/* Para os cards clicáveis (na página Documentação) */
+.card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
 /* ============================= */
 /* 6. Botões “Acessar”          */
 /* ============================= */
+/* Usado na página Home */
 .btn-primary {
     background-color: #C51631 !important;
     border-color: #A3102A !important;
