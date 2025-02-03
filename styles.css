@@ -59,7 +59,7 @@ header .container {
   justify-content: center;
   width: 100%;
 }
-/* Para garantir que os títulos não fiquem colados ao topo, removemos margens extras */
+/* Ajusta os títulos para que não fiquem "colados" ao topo */
 header .display-4,
 header .lead {
   margin: 0.5rem 0;
@@ -76,7 +76,7 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
-/* Para Home e Documentação */
+/* Aplica tanto para a Home quanto para a Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -96,7 +96,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Na página Documentação, os cards serão clicáveis */
+/* Na página Documentação, o card todo será clicável */
 .card a {
   display: block;
   color: inherit;
@@ -120,6 +120,7 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
+/* O rodapé personalizado será utilizado em todas as páginas */
 .custom-footer {
   background-color: #1A1A1A;
   color: #ffffff;
@@ -140,11 +141,16 @@ section {
 }
 .custom-footer .footer-top,
 .custom-footer .footer-middle,
+.custom-footer .footer-social,
+.custom-footer .footer-cta,
 .custom-footer .footer-bottom {
+  margin-bottom: 20px;
+}
+.custom-footer .footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
 }
 .custom-footer .footer-logo img {
   max-width: 200px;
@@ -158,19 +164,27 @@ section {
 .custom-footer .footer-menu ul li {
   margin-right: 15px;
 }
-.custom-footer .footer-contact,
-.custom-footer .footer-social {
+.custom-footer .footer-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.custom-footer .footer-middle > div {
   flex: 1;
   min-width: 250px;
-  margin-bottom: 20px;
 }
 .custom-footer .footer-social ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: inline-block;
 }
 .custom-footer .footer-social ul li {
-  margin-bottom: 5px;
+  display: inline;
+  margin-right: 15px;
+}
+.custom-footer .footer-cta {
+  text-align: center;
 }
 .custom-footer .footer-bottom {
   text-align: center;
