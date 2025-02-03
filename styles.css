@@ -52,18 +52,18 @@ header.bg-primary {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1rem 0;  /* Reduzido de 8rem para 4rem */
+  padding: 0rem 0;  /* Reduzido de 8rem para 4rem */
 }
 header .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem 0; 
+  padding: 2rem 0; 
   width: 100%;
 }
 header .display-4,
 header .lead {
-  margin: 0.5rem 0;
+  margin: 0.1rem 0;
 }
 
 /* ============================= */
