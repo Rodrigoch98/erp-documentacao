@@ -1,13 +1,17 @@
 /* styles.css */
 
-/* Estilos Globais */
+/* ============================= */
+/* 1. Estilos Globais            */
+/* ============================= */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
     color: #333333;
 }
 
-/* Navbar: fundo escuro e textos em branco */
+/* ============================= */
+/* 2. Navbar                     */
+/* ============================= */
 .navbar {
     background-color: #1A1A1A !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -20,24 +24,23 @@ body {
     color: #EAF5F9; /* Destaque opcional */
 }
 
-/* Header (Banner Principal) para Home e Documentação */
-/* 
-   - Fundo forçado para #3a768c (mesmo se tiver a classe bg-primary)
-   - Conteúdo centralizado horizontal e verticalmente
-   - Altura definida (não alterada)
-*/
+/* ============================= */
+/* 3. Header (Banner Principal)  */
+/* ============================= */
+/* Aplica para todas as páginas que possuam o header com os dizeres */
 header,
 header.bg-primary {
-    background-color: #3a768c !important;
+    background-color: #3a768c !important;  /* Fundo forçado para #3a768c */
     color: #ffffff;
     display: flex;
     align-items: center;      /* Centraliza verticalmente */
     justify-content: center;  /* Centraliza horizontalmente */
-    min-height: calc((100vh - 70px) / 3);  /* Altura definida (1/3 da viewport menos o navbar) */
+    min-height: calc((100vh - 70px) / 3);  /* Altura definida (1/3 da viewport menos altura do navbar) */
     text-align: center;
-    padding: 2rem;  /* Padding para garantir bom espaçamento em telas menores */
+    padding: 2rem;  /* Espaçamento extra para telas menores */
 }
-/* Regra adicional para centralizar o conteúdo interno do header */
+
+/* Centralização do conteúdo interno do header */
 header .container {
     display: flex;
     flex-direction: column;
@@ -46,13 +49,17 @@ header .container {
     height: 100%;
 }
 
-/* Seção Geral */
+/* ============================= */
+/* 4. Seção Geral                */
+/* ============================= */
 section {
     background-color: #ffffff;
     padding: 50px 0;
 }
 
-/* Cards de Documentação */
+/* ============================= */
+/* 5. Cards de Documentação      */
+/* ============================= */
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid #ABB8C3;
@@ -73,7 +80,9 @@ section {
     color: #C51631 !important;
 }
 
-/* Botões “Acessar” */
+/* ============================= */
+/* 6. Botões “Acessar”           */
+/* ============================= */
 .btn-primary {
     background-color: #C51631 !important;
     border-color: #A3102A !important;
@@ -85,7 +94,9 @@ section {
     color: #C51631 !important;
 }
 
-/* Footer: fundo escuro e textos/ícones em branco */
+/* ============================= */
+/* 7. Footer                     */
+/* ============================= */
 footer {
     background-color: #1A1A1A;
     color: #ffffff;
@@ -105,7 +116,9 @@ footer p,
     color: #C51631;
 }
 
-/* Formulários */
+/* ============================= */
+/* 8. Formulários                */
+/* ============================= */
 .form-label {
     color: #333333;
 }
@@ -119,7 +132,9 @@ footer p,
     box-shadow: none;
 }
 
-/* (Opcional) Ícone dentro do botão "Acessar" */
+/* ============================= */
+/* 9. Ícone dentro do botão      */
+/* ============================= */
 .acessar-icon {
     color: #C51631;
 }
