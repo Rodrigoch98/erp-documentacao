@@ -17,16 +17,16 @@ body {
 }
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-    color: #EAF5F9; /* Opcional: para destacar */
+    color: #EAF5F9; /* opcional: destaque em um tom claro */
 }
 
 /* Header (Banner Principal) para Home e Documentação */
-/* Agora com fundo #3a768c e texto centralizado em branco */
+/* Agora com fundo #3a768c, texto branco, e conteúdo centralizado */
 header {
-    background-color: #3a768c;
-    color: #ffffff;       /* Texto branco para contraste */
+    background-color: #3a768c !important;
+    color: #ffffff;
     text-align: center;
-    padding: 5rem 0;      /* Espaçamento vertical (equivalente a py-5) */
+    padding: 5rem 0; /* Equivalente a py-5 */
 }
 
 /* Seção Geral */
@@ -51,7 +51,7 @@ section {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-/* Ícones dos Cards: usando a cor de acento */
+/* Ícones dos Cards: usa a cor de acento */
 .card i.text-primary {
     color: #C51631 !important;
 }
