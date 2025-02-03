@@ -1,5 +1,5 @@
 // scripts.js
-// Interatividade do menu mobile e (se desejar) atualização automática do ano no rodapé
+// Interatividade do menu mobile e atualização automática do ano (se desejado)
 document.addEventListener('DOMContentLoaded', function () {
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
       navbarCollapse.classList.remove('show');
     });
   });
-  
-  // Se você preferir usar o ano automático, descomente as linhas abaixo:
+
+  // Se desejar atualizar o ano automaticamente, descomente as linhas abaixo:
   // const yearElement = document.getElementById('year');
   // if (yearElement) {
   //   yearElement.textContent = new Date().getFullYear();
