@@ -75,7 +75,7 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
-/* Aplica tanto para Home quanto para Documentação */
+/* Aplica para Home e Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -95,7 +95,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Para os cards na página Documentação, o card todo é clicável */
+/* Na página Documentação, o card inteiro é clicável */
 .card a {
   display: block;
   color: inherit;
