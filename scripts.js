@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Fecha o menu ao clicar em um link
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
+  document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
       navbarCollapse.classList.remove('show');
     });
