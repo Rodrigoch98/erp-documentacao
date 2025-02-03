@@ -1,152 +1,158 @@
-/* styles.css */
+/* ============================= */
+/* 0. Sticky Footer Setup       */
+/* ============================= */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
 
 /* ============================= */
 /* 1. Global Styles             */
 /* ============================= */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    color: #333333;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 /* ============================= */
 /* 2. Navbar                    */
 /* ============================= */
 .navbar {
-    background-color: #1A1A1A !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1A1A1A !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand {
+  /* Alterado de ERP DOCS para LINCE TECH */
+  color: #ffffff;
+  font-weight: bold;
 }
 .navbar .nav-link {
-    color: #ffffff;
+  color: #ffffff;
 }
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-    color: #EAF5F9; /* Destaque opcional */
+  color: #EAF5F9; /* Destaque opcional */
 }
 
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aplica para Home e Documentação (mesmo se usar a classe bg-primary) */
+/* Aplica para Home e Documentação */
 header,
 header.bg-primary {
-    background-color: #3a768c !important;  /* Fundo forçado para #3a768c */
-    color: #ffffff;
-    display: flex;
-    align-items: center;      /* Centraliza verticalmente */
-    justify-content: center;  /* Centraliza horizontalmente */
-    /* Mantemos a altura definida pelo padding (py-5) do Bootstrap; 
-       se desejar ajustar a altura sem alterar o padding, pode definir um min-height menor.
-       Aqui, removemos o min-height forçado para evitar que o conteúdo fique "colado" ao topo */
-    /* Se necessário, você pode definir um min-height, por exemplo:
-       min-height: 25vh; 
-       mas neste exemplo vamos depender do padding */
-    text-align: center;
-    padding: 5rem 0;
+  background-color: #3a768c !important;  /* Fundo forçado para #3a768c */
+  color: #ffffff;
+  display: flex;
+  align-items: center;      /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  text-align: center;
+  padding: 5rem 0;          /* Espaço (py-5 do Bootstrap) */
+}
+header .container {
+  /* Centraliza o conteúdo dentro do header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
-/* Caso o conteúdo interno precise de ajuste extra, centralizamos o container */
-header .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
+/* Altere o texto do header via HTML (ver abaixo) */
 
 /* ============================= */
 /* 4. Seção Geral               */
 /* ============================= */
 section {
-    background-color: #ffffff;
-    padding: 50px 0;
+  background-color: #ffffff;
+  padding: 50px 0;
 }
 
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
+/* Estilo dos cards (para Home e Documentação) */
 .card {
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #ABB8C3;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #333333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #ABB8C3;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #333333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
 }
 .card-body {
-    padding: 20px;
+  padding: 20px;
 }
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-/* Ícones dos Cards: usa a cor de acento */
+/* Ícones dos Cards */
 .card i.text-primary {
-    color: #C51631 !important;
-}
-
-/* Para os cards clicáveis (na página Documentação) */
-.card a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
+  color: #C51631 !important;
 }
 
 /* ============================= */
-/* 6. Botões “Acessar”          */
+/* 6. Botões “Acessar” (Home)    */
 /* ============================= */
-/* Usado na página Home */
 .btn-primary {
-    background-color: #C51631 !important;
-    border-color: #A3102A !important;
-    color: #ffffff !important;
+  background-color: #C51631 !important;
+  border-color: #A3102A !important;
+  color: #ffffff !important;
 }
 .btn-primary:hover {
-    background-color: #ffffff !important;
-    border-color: #C51631 !important;
-    color: #C51631 !important;
+  background-color: #ffffff !important;
+  border-color: #C51631 !important;
+  color: #C51631 !important;
 }
 
 /* ============================= */
 /* 7. Footer                    */
 /* ============================= */
 footer {
-    background-color: #1A1A1A;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 3px solid #C51631;
+  background-color: #1A1A1A;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 3px solid #C51631;
 }
 footer p,
 .social-links a {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 .social-links a {
-    text-decoration: none;
-    margin: 0 10px;
+  text-decoration: none;
+  margin: 0 10px;
 }
 .social-links a:hover {
-    color: #C51631;
+  color: #C51631;
 }
 
 /* ============================= */
 /* 8. Formulários               */
 /* ============================= */
 .form-label {
-    color: #333333;
+  color: #333333;
 }
 .form-control {
-    background-color: #ffffff;
-    color: #333333;
-    border: 1px solid #ABB8C3;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #ABB8C3;
 }
 .form-control:focus {
-    border-color: #C51631;
-    box-shadow: none;
+  border-color: #C51631;
+  box-shadow: none;
 }
 
 /* ============================= */
 /* 9. Ícone no Botão "Acessar"   */
 /* ============================= */
 .acessar-icon {
-    color: #C51631;
+  color: #C51631;
 }
