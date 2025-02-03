@@ -43,7 +43,7 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aumentamos o padding para que o título não fique colado ao topo */
+/* Aumentamos o padding para afastar o título do topo */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -120,11 +120,15 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
-/* Rodapé organizado em duas linhas: a primeira com três colunas e a segunda com redes sociais e direitos */
+/* O rodapé foi organizado em 3 partes:
+   - Parte Superior: três colunas (Contato, Onde estamos, Mapa)
+   - Parte Intermediária: Redes Sociais (título e ícones com textos)
+   - Parte Inferior: linha com a logo (no canto inferior esquerdo) e direitos autorais à direita
+*/
 .custom-footer {
   background-color: #1A1A1A;
   color: #ffffff;
-  padding: 30px 0;
+  padding: 20px 0 10px 0;
   font-size: 0.9rem;
 }
 .custom-footer a {
@@ -140,17 +144,7 @@ section {
   padding: 0 15px;
 }
 
-/* Logo do rodapé (acima das demais seções) */
-.custom-footer .footer-logo-top {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.custom-footer .footer-logo-top img {
-  max-width: 80px; /* Logo reduzida */
-  height: auto;
-}
-
-/* Linha superior do rodapé: 3 colunas */
+/* Parte Superior do rodapé: 3 colunas */
 .custom-footer .footer-top {
   margin-bottom: 20px;
 }
@@ -167,7 +161,7 @@ section {
   margin-bottom: 5px;
 }
 
-/* Linha inferior: Redes Sociais */
+/* Parte Intermediária: Redes Sociais */
 .footer-social {
   margin-bottom: 20px;
   text-align: center;
@@ -192,9 +186,23 @@ section {
   vertical-align: middle;
 }
 
-/* Linha final: Direitos autorais */
-.custom-footer .footer-bottom {
-  text-align: center;
+/* Parte Inferior: Linha com a logo e direitos autorais */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+.footer-bottom .logo-bottom {
+  /* Logo no canto inferior esquerdo – tamanho aumentado */
+  max-width: 150px;
+  height: auto;
+}
+.footer-bottom .copyright {
+  text-align: right;
+  flex: 1;
 }
 
 /* ============================= */
