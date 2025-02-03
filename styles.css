@@ -27,21 +27,25 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aplica para Home e Documentação, independentemente da classe bg-primary */
+/* Aplica para Home e Documentação (mesmo se tiver a classe bg-primary) */
 header,
 header.bg-primary {
     background-color: #3a768c !important;  /* Fundo forçado para #3a768c */
     color: #ffffff;
+    display: flex;
+    align-items: center;      /* Centraliza verticalmente */
+    justify-content: center;  /* Centraliza horizontalmente */
+    min-height: calc((100vh - 70px) / 4);  /* Reduzido para 1/4 da viewport (descontando o navbar) */
     text-align: center;
-    /* Removemos a regra de flex e min-height para que a altura seja definida pelo py-5 (padding) */
-    padding: 5rem 0;  /* Utiliza o mesmo espaçamento do py-5 do Bootstrap */
+    padding: 2rem;  /* Padding extra para telas menores */
 }
-
-/* Se desejar, caso o conteúdo do header precise de um ajuste vertical extra, 
-   você pode adicionar um padding interno extra ao container, por exemplo: */
+/* Centraliza o conteúdo interno do header */
 header .container {
-    /* Se o conteúdo continuar "colado" ao topo, você pode ajustar com um padding-top adicional */
-    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* ============================= */
