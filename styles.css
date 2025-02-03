@@ -59,7 +59,7 @@ header .container {
   justify-content: center;
   width: 100%;
 }
-/* Ajusta os títulos para que não fiquem "colados" ao topo */
+/* Para evitar que o título fique "colado" ao topo, adicionamos margens internas */
 header .display-4,
 header .lead {
   margin: 0.5rem 0;
@@ -76,7 +76,7 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
-/* Aplica tanto para a Home quanto para a Documentação */
+/* Aplica para Home e Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -96,7 +96,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Na página Documentação, o card todo será clicável */
+/* Na página Documentação, os cards serão totalmente clicáveis */
 .card a {
   display: block;
   color: inherit;
@@ -120,7 +120,6 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
-/* O rodapé personalizado será utilizado em todas as páginas */
 .custom-footer {
   background-color: #1A1A1A;
   color: #ffffff;
@@ -139,53 +138,62 @@ section {
   margin: 0 auto;
   padding: 0 15px;
 }
-.custom-footer .footer-top,
-.custom-footer .footer-middle,
-.custom-footer .footer-social,
-.custom-footer .footer-cta,
-.custom-footer .footer-bottom {
-  margin-bottom: 20px;
-}
+/* Footer Top: Logo e Localização */
 .custom-footer .footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 .custom-footer .footer-logo img {
-  max-width: 200px;
+  max-width: 100px;  /* Reduzida a logo */
+  height: auto;
 }
-.custom-footer .footer-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+.custom-footer .footer-location {
+  flex: 1;
+  min-width: 250px;
 }
-.custom-footer .footer-menu ul li {
-  margin-right: 15px;
+.custom-footer .footer-location h3 {
+  margin-bottom: 0.5rem;
 }
+/* Embed do Mapa no Rodapé */
+.custom-footer .footer-map {
+  margin-top: 10px;
+}
+.custom-footer .footer-map iframe {
+  width: 100%;
+  border: 0;
+  height: 150px;
+}
+
+/* Footer Middle: Contato e Redes Sociais */
 .custom-footer .footer-middle {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
-.custom-footer .footer-middle > div {
+.custom-footer .footer-contact,
+.custom-footer .footer-social {
   flex: 1;
   min-width: 250px;
+}
+.custom-footer .footer-contact h3,
+.custom-footer .footer-social h3 {
+  margin-bottom: 0.5rem;
 }
 .custom-footer .footer-social ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-block;
+  display: flex;
 }
 .custom-footer .footer-social ul li {
-  display: inline;
   margin-right: 15px;
 }
-.custom-footer .footer-cta {
-  text-align: center;
-}
+
+/* Footer Bottom: Direitos autorais */
 .custom-footer .footer-bottom {
   text-align: center;
 }
