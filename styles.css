@@ -43,7 +43,6 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
-/* O padding foi aumentado para 8rem para afastar o título do topo */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -52,7 +51,7 @@ header.bg-primary {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8rem 0;
+  padding: 8rem 0;  /* 8rem de padding para afastar do topo */
 }
 header .container {
   display: flex;
@@ -120,7 +119,7 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
-/* O rodapé está organizado em 3 partes:
+/* O rodapé é organizado em duas partes:
    - Parte Superior: Linha com 3 colunas (Contato com redes sociais, Onde estamos e Mapa)
    - Parte Inferior: Linha com a logo (no canto inferior esquerdo) e direitos autorais à direita
 */
@@ -160,7 +159,7 @@ section {
   margin-bottom: 5px;
 }
 
-/* Redes Sociais dentro da coluna "Contato" */
+/* Redes Sociais dentro da coluna Contato */
 .footer-social-inside {
   margin-top: 15px;
 }
