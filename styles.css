@@ -21,8 +21,7 @@ body {
 }
 
 /* Header (Banner Principal) para Home e Documentação */
-/* Agora com fundo #3a768c, texto branco e conteúdo centralizado vertical e horizontalmente,
-   com altura reduzida para um terço do valor anterior */
+/* Força o fundo a #3a768c, com conteúdo centralizado */
 header,
 header.bg-primary {
     background-color: #3a768c !important;
@@ -30,10 +29,18 @@ header.bg-primary {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Reduz a altura para 1/3 do valor anterior (viewport total menos a altura do navbar) */
+    /* Mantém a altura definida (neste exemplo, usamos 1/3 da viewport menos a altura do navbar) */
     min-height: calc((100vh - 70px) / 3);
     text-align: center;
-    padding: 2rem;  /* Ajuste opcional para telas menores */
+    padding: 2rem;  /* Padding extra para telas menores */
+}
+
+/* Novo: Centraliza o conteúdo interno do header */
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 /* Seção Geral */
