@@ -7,7 +7,7 @@ body {
     color: #333333;
 }
 
-/* Navbar: fundo do topo (mesma cor do rodapé) */
+/* Navbar: fundo do topo e textos em branco */
 .navbar {
     background-color: #1A1A1A !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -17,17 +17,16 @@ body {
 }
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-    color: #EAF5F9; /* opcional: destacar com a mesma cor do header */
+    color: #EAF5F9; /* Opcional: para destacar */
 }
 
-/* Header (Banner Principal)
-   - Fundo da área com os dizeres definido como #EAF5F9
-   - Conteúdo centralizado
-*/
+/* Header (Banner Principal) para Home e Documentação */
+/* Agora com fundo #3a768c e texto centralizado em branco */
 header {
-    background-color: #EAF5F9;
+    background-color: #3a768c;
+    color: #ffffff;       /* Texto branco para contraste */
     text-align: center;
-    padding: 5rem 0; /* espaçamento vertical (py-5) */
+    padding: 5rem 0;      /* Espaçamento vertical (equivalente a py-5) */
 }
 
 /* Seção Geral */
@@ -52,7 +51,7 @@ section {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-/* Ícones dos Cards: sobrescreve text-primary para usar a cor de acento */
+/* Ícones dos Cards: usando a cor de acento */
 .card i.text-primary {
     color: #C51631 !important;
 }
@@ -69,7 +68,7 @@ section {
     color: #C51631 !important;
 }
 
-/* Footer: fundo do topo (mesma cor da navbar) e textos/ícones em branco */
+/* Footer: fundo escuro e textos/ícones em branco */
 footer {
     background-color: #1A1A1A;
     color: #ffffff;
