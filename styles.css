@@ -11,18 +11,18 @@ body {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
-/* Banner Principal */
+/* Banner Principal - Alterado para fundo cinza médio e texto branco */
 header {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #1a1a1a; /* Cinza escuro no fundo do topo */
-    color: #d3d3d3; /* Cinza claro para o texto do título */
+    background: #808080; /* Cinza médio */
+    color: #ffffff;      /* Texto em branco */
     text-align: center;
 }
 
-/* Subtítulo abaixo do título principal */
+/* Subtítulo abaixo do título principal - Texto em branco */
 header p {
-    color: #d3d3d3; /* Cinza claro para o texto "Acesso rápido às documentações de todas as áreas do ERP" */
+    color: #ffffff;
 }
 
 /* Área atrás das opções de Produção, Qualidade e demais */
@@ -86,8 +86,6 @@ footer p, .social-links a {
 .social-links a:hover {
     color: #8B0000;
 }
-
-/* --- Alterações solicitadas para os ícones --- */
 
 /* Ícone ACESSAR: exibir em vermelho escuro */
 .acessar-icon {
