@@ -1,30 +1,40 @@
 // scripts.js
 document.addEventListener('DOMContentLoaded', function () {
+  // Utilize a API do Bootstrap Collapse para manipular o menu
   const navbarToggler = document.querySelector('.navbar-toggler');
-  const navbarCollapse = document.querySelector('#navbarNav');
+  const navbarCollapse = document.getElementById('navbarNav');
+  // Cria uma instância do Collapse sem toggling automático
+  const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
 
-  // Quando o botão do menu é clicado, alterna a classe "show"
+  // Ao clicar no botão, alterna entre mostrar e ocultar o menu
   navbarToggler.addEventListener('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation(); // Impede que o clique se propague e interfira no fechamento
-    navbarCollapse.classList.toggle('show');
+    e.stopPropagation(); // Impede propagação para evitar conflitos
+    if (navbarCollapse.classList.contains('show')) {
+      bsCollapse.hide();
+    } else {
+      bsCollapse.show();
+    }
   });
 
   // Fecha o menu quando clicar fora dele
   document.addEventListener('click', function (e) {
-    if (!navbarCollapse.contains(e.target) && !navbarToggler.contains(e.target)) {
-      navbarCollapse.classList.remove('show');
+    if (navbarCollapse.classList.contains('show') &&
+        !navbarCollapse.contains(e.target) &&
+        !navbarToggler.contains(e.target)) {
+      bsCollapse.hide();
     }
   });
 
-  // Fecha o menu quando um link é clicado
+  // Fecha o menu ao clicar em qualquer link do menu
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function () {
-      navbarCollapse.classList.remove('show');
+      if (navbarCollapse.classList.contains('show')) {
+        bsCollapse.hide();
+      }
     });
   });
 
-  // (Opcional) Atualização automática do ano
+  // (Opcional) Atualização automática do ano:
   // const yearElement = document.getElementById('year');
   // if (yearElement) {
   //   yearElement.textContent = new Date().getFullYear();
