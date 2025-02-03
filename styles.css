@@ -43,6 +43,7 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
+/* O padding foi aumentado para 8rem para afastar o título do topo */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -51,7 +52,7 @@ header.bg-primary {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8rem 0;  /* Aumentado para 8rem */
+  padding: 8rem 0;
 }
 header .container {
   display: flex;
@@ -75,6 +76,7 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
+/* Aplica tanto para Home quanto para Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -94,7 +96,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Para os cards na página Documentação, todo o card é clicável */
+/* Para os cards na página Documentação, o card todo é clicável */
 .card a {
   display: block;
   color: inherit;
@@ -118,10 +120,9 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
-/* O rodapé é organizado em 3 partes:
-   - Parte Superior: Linha com 3 colunas (Contato, Onde estamos, Mapa)
-   - Dentro da Coluna "Contato": redes sociais (Instagram e LinkedIn em linhas separadas)
-   - Parte Inferior: Linha final com logo (no canto inferior esquerdo) e direitos autorais à direita
+/* O rodapé está organizado em 3 partes:
+   - Parte Superior: Linha com 3 colunas (Contato com redes sociais, Onde estamos e Mapa)
+   - Parte Inferior: Linha com a logo (no canto inferior esquerdo) e direitos autorais à direita
 */
 .custom-footer {
   background-color: #1A1A1A;
@@ -165,13 +166,12 @@ section {
 }
 .footer-social-inside p {
   margin: 0 0 5px 0;
-  line-height: 1.5;
 }
 .footer-social-inside a {
   display: block;
 }
 
-/* Parte Inferior: Linha com Logo e Direitos Autorais */
+/* Parte Inferior do rodapé: Linha com Logo e Direitos Autorais */
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
