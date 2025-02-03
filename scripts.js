@@ -1,14 +1,13 @@
 // scripts.js
 document.addEventListener('DOMContentLoaded', function () {
-  // Utilize a API do Bootstrap Collapse para manipular o menu
+  // Utiliza a API do Bootstrap Collapse para gerenciar o menu mobile
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.getElementById('navbarNav');
-  // Cria uma instância do Collapse sem toggling automático
   const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
 
-  // Ao clicar no botão, alterna entre mostrar e ocultar o menu
+  // Alterna o menu ao clicar no botão (hamburger)
   navbarToggler.addEventListener('click', function (e) {
-    e.stopPropagation(); // Impede propagação para evitar conflitos
+    e.stopPropagation();
     if (navbarCollapse.classList.contains('show')) {
       bsCollapse.hide();
     } else {
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Fecha o menu quando clicar fora dele
+  // Fecha o menu ao clicar fora dele
   document.addEventListener('click', function (e) {
     if (navbarCollapse.classList.contains('show') &&
         !navbarCollapse.contains(e.target) &&
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Fecha o menu ao clicar em qualquer link do menu
+  // Fecha o menu quando um link do menu é clicado
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function () {
       if (navbarCollapse.classList.contains('show')) {
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // (Opcional) Atualização automática do ano:
+  // (Opcional) Atualização automática do ano
   // const yearElement = document.getElementById('year');
   // if (yearElement) {
   //   yearElement.textContent = new Date().getFullYear();
