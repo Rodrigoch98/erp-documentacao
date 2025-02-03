@@ -15,4 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
       navbarCollapse.classList.remove('show');
     });
   });
+
+  // Atualiza automaticamente o ano no rodapé
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 });
