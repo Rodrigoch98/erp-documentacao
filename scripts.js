@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Se desejar atualizar o ano automaticamente, descomente as linhas abaixo:
+  // Para atualizar o ano automaticamente, descomente as linhas abaixo:
   // const yearElement = document.getElementById('year');
   // if (yearElement) {
   //   yearElement.textContent = new Date().getFullYear();
