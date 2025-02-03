@@ -61,7 +61,7 @@ header .container {
 }
 /* ADICIONADO: para centralizar ainda mais o título HELP SINGE */
 header h1.display-4 {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 header .display-4,
 header .lead {
