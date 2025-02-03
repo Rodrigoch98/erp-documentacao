@@ -76,6 +76,7 @@ section {
 /* ============================= */
 /* 5. Cards de Documentação     */
 /* ============================= */
+/* Aplica para Home e Documentação */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #ABB8C3;
@@ -119,13 +120,11 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
-/* O rodapé agora é organizado em 2 linhas principais:
-   – Linha superior: 3 colunas (Contato, Onde estamos e Mapa)
-   – Linha inferior: Redes Sociais (com o título "Nos acompanhe nas redes sociais:" seguido dos ícones com textos ao lado) e, abaixo, os direitos autorais */
+/* Rodapé organizado em duas linhas: a primeira com três colunas e a segunda com redes sociais e direitos */
 .custom-footer {
   background-color: #1A1A1A;
   color: #ffffff;
-  padding: 30px 0; /* Reduzido para não ficar exagerado */
+  padding: 30px 0;
   font-size: 0.9rem;
 }
 .custom-footer a {
@@ -141,7 +140,17 @@ section {
   padding: 0 15px;
 }
 
-/* Linha superior do rodapé com 3 colunas */
+/* Logo do rodapé (acima das demais seções) */
+.custom-footer .footer-logo-top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.custom-footer .footer-logo-top img {
+  max-width: 80px; /* Logo reduzida */
+  height: auto;
+}
+
+/* Linha superior do rodapé: 3 colunas */
 .custom-footer .footer-top {
   margin-bottom: 20px;
 }
@@ -158,7 +167,7 @@ section {
   margin-bottom: 5px;
 }
 
-/* Linha inferior do rodapé: Redes Sociais */
+/* Linha inferior: Redes Sociais */
 .footer-social {
   margin-bottom: 20px;
   text-align: center;
