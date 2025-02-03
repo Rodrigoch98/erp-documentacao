@@ -43,15 +43,16 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
+/* Aumentamos o padding para afastar o título do topo */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
   color: #ffffff;
   display: flex;
-  align-items: center;      /* Centraliza verticalmente */
-  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 7rem 0;          /* Aumentado para afastar o título do topo */
+  padding: 7rem 0;  /* Aumentado de 5rem para 7rem */
 }
 header .container {
   display: flex;
@@ -137,20 +138,55 @@ section {
   padding: 0 15px;
 }
 
-/* Footer: Linha superior com 3 colunas */
+/* Rodapé – Linha superior: 3 colunas */
 .custom-footer .footer-top {
   margin-bottom: 20px;
 }
-.custom-footer .footer-top .row > [class^="col-"] {
-  margin-bottom: 20px;
-}
-.custom-footer .footer-top h3 {
-  margin-bottom: 10px;
+.custom-footer .footer-top .col-md-4 {
+  padding: 0 15px;
 }
 
-/* Footer: Linha inferior (redes sociais e direitos autorais) */
-.custom-footer .footer-bottom {
+/* Rodapé – Coluna Contato (esquerda) */
+.footer-contact h3 {
+  margin-bottom: 10px;
+}
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+/* Rodapé – Coluna Onde Estamos (centro) */
+.footer-location h3 {
+  margin-bottom: 10px;
+}
+.footer-location p {
+  margin-bottom: 5px;
+}
+
+/* Rodapé – Coluna Mapa (direita) */
+.footer-map iframe {
+  width: 100%;
+  height: 150px;
+  border: 0;
+}
+
+/* Linha inferior: Redes Sociais e Direitos Autorais */
+.footer-bottom,
+.footer-social {
   text-align: center;
+}
+.footer-social-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+.footer-social ul li {
+  display: inline;
+  margin-right: 15px;
 }
 
 /* ============================= */
