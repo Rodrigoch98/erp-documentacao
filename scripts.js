@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // (Opcional) Atualização automática do ano
+  // (Opcional) Atualização automática do ano:
   // const yearElement = document.getElementById('year');
   // if (yearElement) {
   //   yearElement.textContent = new Date().getFullYear();
