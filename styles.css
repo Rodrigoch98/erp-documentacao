@@ -51,7 +51,7 @@ header.bg-primary {
   align-items: center;      /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
   text-align: center;
-  padding: 5rem 0;          /* Mantém o py-5 */
+  padding: 5rem 0;          /* Espaçamento vertical (py-5 do Bootstrap) */
 }
 header .container {
   display: flex;
@@ -59,7 +59,7 @@ header .container {
   justify-content: center;
   width: 100%;
 }
-/* Para evitar que o título fique "colado" ao topo, adicionamos margens internas */
+/* Ajusta margens internas para que os títulos não fiquem colados */
 header .display-4,
 header .lead {
   margin: 0.5rem 0;
@@ -96,7 +96,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Na página Documentação, os cards serão totalmente clicáveis */
+/* Na página Documentação, o card todo será clicável */
 .card a {
   display: block;
   color: inherit;
@@ -138,6 +138,7 @@ section {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 /* Footer Top: Logo e Localização */
 .custom-footer .footer-top {
   display: flex;
@@ -147,7 +148,7 @@ section {
   margin-bottom: 20px;
 }
 .custom-footer .footer-logo img {
-  max-width: 100px;  /* Reduzida a logo */
+  max-width: 100px;  /* Logo menor */
   height: auto;
 }
 .custom-footer .footer-location {
@@ -156,15 +157,6 @@ section {
 }
 .custom-footer .footer-location h3 {
   margin-bottom: 0.5rem;
-}
-/* Embed do Mapa no Rodapé */
-.custom-footer .footer-map {
-  margin-top: 10px;
-}
-.custom-footer .footer-map iframe {
-  width: 100%;
-  border: 0;
-  height: 150px;
 }
 
 /* Footer Middle: Contato e Redes Sociais */
