@@ -54,7 +54,7 @@ section {
 
 /* Botões */
 .btn-primary {
-    background-color: #8B0000;
+    background-color: #8B0000;  /* Vermelho escuro */
     border-color: #660000;
     color: #ffffff;
 }
@@ -75,15 +75,7 @@ footer {
 
 /* Texto e ícones do rodapé */
 footer p, .social-links a {
-    color: #ffffff !important; /* Branco para o texto "© 2023 ERP Documentação. Todos os direitos reservados." e ícones de redes sociais */
-}
-
-/* Área abaixo do rodapé onde está o texto de direitos autorais */
-.footer-bottom {
-    background-color: #ffffff; /* Branco na parte inferior do rodapé */
-    color: #1a1a1a; /* Texto escuro para contraste */
-    padding: 10px 0;
-    text-align: center;
+    color: #ffffff !important; /* Branco para o texto e ícones */
 }
 
 .social-links a {
@@ -95,13 +87,14 @@ footer p, .social-links a {
     color: #8B0000;
 }
 
-/* Alterar azul para a cor da aba de ícones sociais */
-.btn-primary {
-    background-color: #1a1a1a;
-    border-color: #1a1a1a;
+/* --- Alterações solicitadas para os ícones --- */
+
+/* Ícone ACESSAR: exibir em vermelho escuro */
+.acessar-icon {
+    color: #8B0000;
 }
 
-.btn-primary:hover {
-    background-color: #8B0000;
-    border-color: #8B0000;
+/* Ícones que estavam em azul: exibir em cinza médio */
+.icon-blue {
+    color: #808080;
 }
