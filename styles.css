@@ -43,6 +43,7 @@ body {
 /* ============================= */
 /* 3. Header (Banner Principal) */
 /* ============================= */
+/* Aumentamos o espaçamento do header para não ficar colado ao topo */
 header,
 header.bg-primary {
   background-color: #3a768c !important;
@@ -51,7 +52,7 @@ header.bg-primary {
   align-items: center;      /* Centraliza verticalmente */
   justify-content: center;  /* Centraliza horizontalmente */
   text-align: center;
-  padding: 5rem 0;          /* Espaçamento vertical (py-5 do Bootstrap) */
+  padding: 7rem 0;          /* Aumentado de 5rem para 7rem */
 }
 header .container {
   display: flex;
@@ -59,7 +60,6 @@ header .container {
   justify-content: center;
   width: 100%;
 }
-/* Ajusta margens internas para que os títulos não fiquem colados */
 header .display-4,
 header .lead {
   margin: 0.5rem 0;
@@ -120,6 +120,14 @@ section {
 /* ============================= */
 /* 7. Custom Footer             */
 /* ============================= */
+/* Estrutura do rodapé organizada em seções, de cima para baixo:
+   1. Contato  
+   2. Espaçamento  
+   3. Onde estamos  
+   4. Espaçamento  
+   5. Mapa  
+   6. "Nos acompanhe nas redes sociais" (título em uma única linha) e abaixo os ícones  
+   7. Linha inferior com direitos autorais */
 .custom-footer {
   background-color: #1A1A1A;
   color: #ffffff;
@@ -138,54 +146,46 @@ section {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-/* Footer Top: Logo e Localização */
-.custom-footer .footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+/* Cada seção do rodapé terá espaçamento inferior */
+.custom-footer .footer-section {
   margin-bottom: 20px;
+  text-align: center;
 }
-.custom-footer .footer-logo img {
-  max-width: 100px;  /* Logo menor */
-  height: auto;
+
+/* Footer: Contato */
+.custom-footer .footer-contact h3 {
+  margin-bottom: 0.5rem;
 }
-.custom-footer .footer-location {
-  flex: 1;
-  min-width: 250px;
-}
+
+/* Footer: Onde estamos */
 .custom-footer .footer-location h3 {
   margin-bottom: 0.5rem;
 }
 
-/* Footer Middle: Contato e Redes Sociais */
-.custom-footer .footer-middle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
+/* Footer: Mapa */
+.custom-footer .footer-map iframe {
+  width: 100%;
+  height: 150px;
+  border: 0;
 }
-.custom-footer .footer-contact,
-.custom-footer .footer-social {
-  flex: 1;
-  min-width: 250px;
-}
-.custom-footer .footer-contact h3,
-.custom-footer .footer-social h3 {
-  margin-bottom: 0.5rem;
+
+/* Footer: Redes Sociais */
+.custom-footer .footer-social-title {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .custom-footer .footer-social ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: inline-block;
 }
 .custom-footer .footer-social ul li {
+  display: inline;
   margin-right: 15px;
 }
 
-/* Footer Bottom: Direitos autorais */
+/* Footer: Direitos autorais */
 .custom-footer .footer-bottom {
   text-align: center;
 }
