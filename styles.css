@@ -1,117 +1,116 @@
 /* styles.css */
 
+/* Paleta de cores adotada:
+   - Fundo geral: #ffffff (branco)
+   - Texto principal: #333333 (quase preto)
+   - Borda leve e detalhes: #abb8c3 (cinza suave)
+   - Cor de destaque (acento): #c51631 (vermelho)
+   - Borda em botões (hover): #a3102a (vermelho mais escuro)
+*/
+
 /* Estilos Globais */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Cinza escuro para o fundo */
-    color: #e0e0e0; /* Cinza claro para o texto */
+    background-color: #ffffff; /* fundo branco */
+    color: #333333;            /* texto escuro */
 }
 
 /* Navbar */
 .navbar {
-    background-color: #1a1a1a !important; /* Cinza escuro no topo */
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+    color: #333333;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #c51631;
 }
 
-/* Banner (Header) */
-/* Sobrescreve a classe bg-primary para header para usar cinza médio */
-header.bg-primary {
-    background-color: #808080 !important; /* Cinza médio */
-}
-
-/* O header já possui a classe text-white, garantindo o texto em branco */
+/* Header (Banner Principal) */
 header {
+    background-color: #ffffff;
+    color: #333333;
     text-align: center;
-    padding-top: 5rem;  /* Equivalente a py-5 */
-    padding-bottom: 5rem;
+    padding: 5rem 0; /* equivalente a py-5 */
+    border-bottom: 3px solid #c51631;
 }
 
-/* Seção de Documentações */
+/* Seção Geral */
 section {
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #ffffff;
     padding: 50px 0;
 }
 
 /* Cards de Documentação */
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
-    border: none;
+    border: 1px solid #abb8c3;
     border-radius: 10px;
-    background-color: #1a1a1a; /* Fundo cinza escuro dos cards */
-    color: #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
-
 .card-body {
-    background-color: #1a1a1a;
     padding: 20px;
-    border-radius: 10px;
 }
-
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-
-/* Ícones dos Cards: sobrescreve a classe text-primary para usar cinza médio */
+/* Ícones dos Cards: sobrescreve text-primary */
 .card i.text-primary {
-    color: #808080 !important;
+    color: #c51631 !important;
 }
 
-/* Botões - Acessar */
+/* Botões (Acessar) */
 .btn-primary {
-    background-color: #8B0000 !important;  /* Vermelho escuro */
-    border-color: #660000 !important;      /* Vermelho ainda mais escuro */
+    background-color: #c51631 !important;
+    border-color: #a3102a !important;
     color: #ffffff !important;
 }
-
 .btn-primary:hover {
     background-color: #ffffff !important;
-    border-color: #8B0000 !important;
-    color: #8B0000 !important;
+    border-color: #c51631 !important;
+    color: #c51631 !important;
 }
 
-/* Rodapé */
+/* Footer */
 footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #333333;
     padding: 20px 0;
     text-align: center;
+    border-top: 3px solid #c51631;
 }
-
 footer p,
 .social-links a {
-    color: #ffffff !important;
+    color: #333333 !important;
 }
-
 .social-links a {
     text-decoration: none;
     margin: 0 10px;
 }
-
 .social-links a:hover {
-    color: #8B0000;
+    color: #c51631;
 }
 
-/* (Opcional) Estilos para Formulários */
+/* Formulários */
 .form-label {
-    color: #e0e0e0;
+    color: #333333;
 }
-
 .form-control {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-    border: 1px solid #808080;
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #abb8c3;
 }
-
 .form-control:focus {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-    border-color: #8B0000;
+    border-color: #c51631;
     box-shadow: none;
 }
 
 /* (Opcional) Ícone dentro do botão "Acessar" */
 .acessar-icon {
-    color: #8B0000;
+    color: #c51631;
 }
