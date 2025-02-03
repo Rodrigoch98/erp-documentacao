@@ -17,12 +17,15 @@ body {
 }
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-    color: #EAF5F9; /* opcional: destaque em um tom claro */
+    color: #EAF5F9; /* Opcional: destaque em um tom claro */
 }
 
-/* Header (Banner Principal) para Home e Documentação */
-/* Agora com fundo #3a768c, texto branco, e conteúdo centralizado */
-header {
+/* 
+   Header (Banner Principal) para Home e Documentação  
+   Se o header tiver a classe "bg-primary", essa regra a sobrescreve.
+*/
+header,
+header.bg-primary {
     background-color: #3a768c !important;
     color: #ffffff;
     text-align: center;
