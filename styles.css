@@ -1,7 +1,7 @@
 /* styles.css */
 
 /* ============================= */
-/* 1. Estilos Globais            */
+/* 1. Global Styles             */
 /* ============================= */
 body {
     font-family: 'Arial', sans-serif;
@@ -10,7 +10,7 @@ body {
 }
 
 /* ============================= */
-/* 2. Navbar                     */
+/* 2. Navbar                    */
 /* ============================= */
 .navbar {
     background-color: #1A1A1A !important;
@@ -25,32 +25,27 @@ body {
 }
 
 /* ============================= */
-/* 3. Header (Banner Principal)  */
+/* 3. Header (Banner Principal) */
 /* ============================= */
-/* Aplica para todas as páginas que possuam o header com os dizeres */
+/* Aplica para Home e Documentação, independentemente da classe bg-primary */
 header,
 header.bg-primary {
     background-color: #3a768c !important;  /* Fundo forçado para #3a768c */
     color: #ffffff;
-    display: flex;
-    align-items: center;      /* Centraliza verticalmente */
-    justify-content: center;  /* Centraliza horizontalmente */
-    min-height: calc((100vh - 70px) / 3);  /* Altura definida (1/3 da viewport menos altura do navbar) */
     text-align: center;
-    padding: 2rem;  /* Espaçamento extra para telas menores */
+    /* Removemos a regra de flex e min-height para que a altura seja definida pelo py-5 (padding) */
+    padding: 5rem 0;  /* Utiliza o mesmo espaçamento do py-5 do Bootstrap */
 }
 
-/* Centralização do conteúdo interno do header */
+/* Se desejar, caso o conteúdo do header precise de um ajuste vertical extra, 
+   você pode adicionar um padding interno extra ao container, por exemplo: */
 header .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    /* Se o conteúdo continuar "colado" ao topo, você pode ajustar com um padding-top adicional */
+    padding-top: 1rem;
 }
 
 /* ============================= */
-/* 4. Seção Geral                */
+/* 4. Seção Geral               */
 /* ============================= */
 section {
     background-color: #ffffff;
@@ -58,7 +53,7 @@ section {
 }
 
 /* ============================= */
-/* 5. Cards de Documentação      */
+/* 5. Cards de Documentação     */
 /* ============================= */
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
@@ -81,7 +76,7 @@ section {
 }
 
 /* ============================= */
-/* 6. Botões “Acessar”           */
+/* 6. Botões “Acessar”          */
 /* ============================= */
 .btn-primary {
     background-color: #C51631 !important;
@@ -95,7 +90,7 @@ section {
 }
 
 /* ============================= */
-/* 7. Footer                     */
+/* 7. Footer                    */
 /* ============================= */
 footer {
     background-color: #1A1A1A;
@@ -117,7 +112,7 @@ footer p,
 }
 
 /* ============================= */
-/* 8. Formulários                */
+/* 8. Formulários               */
 /* ============================= */
 .form-label {
     color: #333333;
@@ -133,7 +128,7 @@ footer p,
 }
 
 /* ============================= */
-/* 9. Ícone dentro do botão      */
+/* 9. Ícone no Botão "Acessar"   */
 /* ============================= */
 .acessar-icon {
     color: #C51631;
