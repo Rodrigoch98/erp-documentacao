@@ -95,7 +95,7 @@ section {
 .card i.text-primary {
   color: #C51631 !important;
 }
-/* Na página Documentação, o card inteiro é clicável */
+/* Na página Documentação, todo o card é clicável */
 .card a {
   display: block;
   color: inherit;
@@ -120,7 +120,7 @@ section {
 /* 7. Custom Footer             */
 /* ============================= */
 /* O rodapé é organizado em duas partes:
-   - Parte Superior: Linha com 3 colunas (Contato com redes sociais, Onde estamos e Mapa)
+   - Parte Superior: Linha com 3 colunas (Contato com redes sociais, Onde estamos, Mapa)
    - Parte Inferior: Linha com a logo (no canto inferior esquerdo) e direitos autorais à direita
 */
 .custom-footer {
@@ -180,7 +180,7 @@ section {
   padding-top: 10px;
 }
 .footer-bottom .logo-bottom {
-  max-width: 150px;  /* Logo aumentada para 150px de largura */
+  max-width: 150px;
   height: auto;
 }
 .footer-bottom .copyright {
