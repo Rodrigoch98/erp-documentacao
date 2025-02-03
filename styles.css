@@ -1,8 +1,10 @@
+/* styles.css */
+
 /* Estilos Globais */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1a1a1a; /* Cinza escuro para o fundo */
-    color: #e0e0e0; /* Cinza claro para melhor contraste */
+    color: #e0e0e0; /* Cinza claro para o texto */
 }
 
 /* Navbar */
@@ -11,23 +13,22 @@ body {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
-/* Banner Principal - Alterado para fundo cinza médio e texto branco */
+/* Banner (Header) */
+/* Sobrescreve a classe bg-primary para header para usar cinza médio */
+header.bg-primary {
+    background-color: #808080 !important; /* Cinza médio */
+}
+
+/* O header já possui a classe text-white, garantindo o texto em branco */
 header {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: #808080; /* Cinza médio */
-    color: #ffffff;      /* Texto em branco */
     text-align: center;
+    padding-top: 5rem;  /* Equivalente a py-5 */
+    padding-bottom: 5rem;
 }
 
-/* Subtítulo abaixo do título principal - Texto em branco */
-header p {
-    color: #ffffff;
-}
-
-/* Área atrás das opções de Produção, Qualidade e demais */
+/* Seção de Documentações */
 section {
-    background-color: #ffffff; /* Branco no fundo atrás das separações */
+    background-color: #ffffff; /* Fundo branco */
     padding: 50px 0;
 }
 
@@ -36,13 +37,13 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
     border: none;
     border-radius: 10px;
-    background-color: #1a1a1a; /* Cinza escuro para os quadrados das opções */
+    background-color: #1a1a1a; /* Fundo cinza escuro dos cards */
     color: #e0e0e0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
-    background-color: #1a1a1a; /* Mantendo cinza escuro dentro das opções */
+    background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
 }
@@ -52,30 +53,35 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Botões */
+/* Ícones dos Cards: sobrescreve a classe text-primary para usar cinza médio */
+.card i.text-primary {
+    color: #808080 !important;
+}
+
+/* Botões - Acessar */
 .btn-primary {
-    background-color: #8B0000;  /* Vermelho escuro */
-    border-color: #660000;
-    color: #ffffff;
+    background-color: #8B0000 !important;  /* Vermelho escuro */
+    border-color: #660000 !important;      /* Vermelho ainda mais escuro */
+    color: #ffffff !important;
 }
 
 .btn-primary:hover {
-    background-color: #ffffff;
-    border-color: #8B0000;
-    color: #8B0000;
+    background-color: #ffffff !important;
+    border-color: #8B0000 !important;
+    color: #8B0000 !important;
 }
 
 /* Rodapé */
 footer {
-    background-color: #1a1a1a; /* Cinza escuro no rodapé */
+    background-color: #1a1a1a;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Texto e ícones do rodapé */
-footer p, .social-links a {
-    color: #ffffff !important; /* Branco para o texto e ícones */
+footer p,
+.social-links a {
+    color: #ffffff !important;
 }
 
 .social-links a {
@@ -87,12 +93,25 @@ footer p, .social-links a {
     color: #8B0000;
 }
 
-/* Ícone ACESSAR: exibir em vermelho escuro */
-.acessar-icon {
-    color: #8B0000;
+/* (Opcional) Estilos para Formulários */
+.form-label {
+    color: #e0e0e0;
 }
 
-/* Ícones que estavam em azul: exibir em cinza médio */
-.icon-blue {
-    color: #808080;
+.form-control {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border: 1px solid #808080;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-color: #8B0000;
+    box-shadow: none;
+}
+
+/* (Opcional) Ícone dentro do botão "Acessar" */
+.acessar-icon {
+    color: #8B0000;
 }
