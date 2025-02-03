@@ -1,40 +1,41 @@
 /* styles.css */
 
-/* Paleta de cores adotada:
-   - Fundo geral: #ffffff (branco)
+/* Paleta de cores utilizada:
+   - Fundo geral do body: #ffffff (branco)
    - Texto principal: #333333 (quase preto)
-   - Borda leve e detalhes: #abb8c3 (cinza suave)
-   - Cor de destaque (acento): #c51631 (vermelho)
-   - Borda em botões (hover): #a3102a (vermelho mais escuro)
+   - Fundo do header (banner com "ERP Documentação"): #EAF5F9 (azul muito claro)
+   - Fundo do navbar e footer: #1A1A1A (cinza muito escuro)
+   - Detalhes e acentos (botões, ícones): #C51631 (vermelho)
+   - Bordas e elementos secundários: #ABB8C3 (cinza suave)
 */
 
 /* Estilos Globais */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* fundo branco */
-    color: #333333;            /* texto escuro */
+    background-color: #ffffff;
+    color: #333333;
 }
 
-/* Navbar */
+/* Navbar: fundo escuro e textos em branco */
 .navbar {
-    background-color: #ffffff !important;
+    background-color: #1A1A1A !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navbar .nav-link {
-    color: #333333;
+    color: #ffffff;
 }
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-    color: #c51631;
+    color: #EAF5F9; /* ou mantenha branco, se preferir */
 }
 
-/* Header (Banner Principal) */
+/* Header (Banner Principal) – área com o texto ERP Documentação */
 header {
-    background-color: #ffffff;
+    background-color: #EAF5F9;
     color: #333333;
     text-align: center;
-    padding: 5rem 0; /* equivalente a py-5 */
-    border-bottom: 3px solid #c51631;
+    padding: 5rem 0; /* Equivalente a py-5 */
+    border-bottom: 3px solid #C51631;
 }
 
 /* Seção Geral */
@@ -46,7 +47,7 @@ section {
 /* Cards de Documentação */
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #abb8c3;
+    border: 1px solid #ABB8C3;
     border-radius: 10px;
     background-color: #ffffff;
     color: #333333;
@@ -59,41 +60,41 @@ section {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-/* Ícones dos Cards: sobrescreve text-primary */
+/* Ícones dos Cards: sobrescreve text-primary para usar a cor de acento */
 .card i.text-primary {
-    color: #c51631 !important;
+    color: #C51631 !important;
 }
 
-/* Botões (Acessar) */
+/* Botões “Acessar” */
 .btn-primary {
-    background-color: #c51631 !important;
-    border-color: #a3102a !important;
+    background-color: #C51631 !important;
+    border-color: #A3102A !important;
     color: #ffffff !important;
 }
 .btn-primary:hover {
     background-color: #ffffff !important;
-    border-color: #c51631 !important;
-    color: #c51631 !important;
+    border-color: #C51631 !important;
+    color: #C51631 !important;
 }
 
-/* Footer */
+/* Footer: fundo escuro e textos/ícones em branco */
 footer {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #1A1A1A;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
-    border-top: 3px solid #c51631;
+    border-top: 3px solid #C51631;
 }
 footer p,
 .social-links a {
-    color: #333333 !important;
+    color: #ffffff !important;
 }
 .social-links a {
     text-decoration: none;
     margin: 0 10px;
 }
 .social-links a:hover {
-    color: #c51631;
+    color: #C51631;
 }
 
 /* Formulários */
@@ -103,14 +104,14 @@ footer p,
 .form-control {
     background-color: #ffffff;
     color: #333333;
-    border: 1px solid #abb8c3;
+    border: 1px solid #ABB8C3;
 }
 .form-control:focus {
-    border-color: #c51631;
+    border-color: #C51631;
     box-shadow: none;
 }
 
 /* (Opcional) Ícone dentro do botão "Acessar" */
 .acessar-icon {
-    color: #c51631;
+    color: #C51631;
 }
