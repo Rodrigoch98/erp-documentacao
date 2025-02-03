@@ -1,5 +1,5 @@
 // scripts.js
-// Interatividade do menu mobile e (se desejado) atualização automática do ano
+// Interatividade do menu mobile e atualização automática do ano (se desejado)
 document.addEventListener('DOMContentLoaded', function () {
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Se você preferir que o ano seja atualizado automaticamente, descomente as linhas abaixo:
+  // Se desejar atualizar o ano automaticamente, descomente as linhas abaixo:
   // const yearElement = document.getElementById('year');
   // if (yearElement) {
   //   yearElement.textContent = new Date().getFullYear();
